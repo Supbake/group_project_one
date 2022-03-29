@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@300;700&display=swap');
+* {
+    font-size: 24px;
+    font-family: 'Teko';
+    color: antiquewhite;
+}
+
+body{
+    background-image: url(./images/Background_darker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#animagbackground {
+    width: 50%;
+    background-color: rgb(251, 214, 129); 
+    text-align: center;
+    height: 500px;
+    margin: auto;
+}
+
+#animag {
+    font-family: "Audiowide";
+    font-size: 400%;
+    color: antiquewhite;
+}
+#question {
+    font-weight: 700;
+}
+
+#information {
+    font-weight: 300;
+}
+
+#discover {
+    font: 700;
+    border: 2px solid rgb(27, 26, 31);
+    border-radius: 25%;
+    background-color: rgb(251, 214, 129);
+} 
