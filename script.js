@@ -1,5 +1,3 @@
-
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -27,26 +25,13 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
             let topTenImg = document.createElement("img");
             topTenImg.src = value[i].image_url
             animeList.append(topTenImg);
-        }
-    });
-
-    const mangaContainer = document.querySelector('.manga_container');
-// const dataInfo = document.getElementById()
-// const totalViews = document.getElementById()
-// const topImg = document.getElementById()
-
-
-    const selections = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Host': 'manga-scraper-for-mangakakalot-website.p.rapidapi.com',
-            'X-RapidAPI-Key': '09a4e7faf2msh523a4db1e7ece89p1a8bf2jsn108177f4fbaf'
-        }
     }
+});
+
+
+
 const mangaContainer = document.querySelector('.manga_container');
-// const dataInfo = document.getElementById()
-// const totalViews = document.getElementById()
-// const topImg = document.getElementById()
+
 
     const selections = {
         method: 'GET',
@@ -55,6 +40,7 @@ const mangaContainer = document.querySelector('.manga_container');
             'X-RapidAPI-Key': '09a4e7faf2msh523a4db1e7ece89p1a8bf2jsn108177f4fbaf'
         }
     }
+
 
     fetch('https://manga-scraper-for-mangakakalot-website.p.rapidapi.com/search?keyword=memori&page=1', selections)
         .then(response => response.json())
@@ -70,19 +56,12 @@ const mangaContainer = document.querySelector('.manga_container');
                 let topTenImg = document.createElement("img")
                 topTenImg.src = value[i].thumbnail_url
 
-                mangaContainer.appendChild(topTenTitle)
-                mangaContainer.appendChild(topTenViews)
-                mangaContainer.appendChild(topTenImg)
-                console.log(topTenTitle)
 
               
                  .catch(err => console.error(err));
     
             }
-            })
-        .then(response => console.log(response))
-        
-
+            });
 
 
 let mangaBtn = document.querySelector('#mangaBtn');
@@ -90,8 +69,9 @@ let mangaBtn = document.querySelector('#mangaBtn');
 mangaBtn.addEventListener('click', function(event) {
     event.preventDefault();
     let mangaInput = document.querySelector('#mangaSearch').value;
+    
 
-    const mangaSearchOptions = {
+const mangaSearchOptions = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Host': 'manga-scraper-for-mangakakalot-website.p.rapidapi.com',
