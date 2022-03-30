@@ -9,9 +9,8 @@ const options = {
 };
 
 
-const topTitle = document.getElementById("anime-title");
-const topRank = document.getElementById("anime-rank");
-const topImg = document.getElementById("anime-image");
+
+const list = document.getElementById("anime-list");
 
 fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
 	.then(response => response.json())
@@ -20,21 +19,22 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
         let value = data.top
         for (let i = 0; i < 10; i++) {
             console.log(value[i]);
+            let animeList = document.createElement("li");
+            list.append(animeList);
             let topTenTitle = document.createElement("p");
             topTenTitle.textContent = value[i].title;
-            topTitle.append(topTenTitle);
-            let topTenRank = document.createElement("p");
-            topTenRank.textContent = value[i].rank;
-            topRank.append(topTenRank);
+            animeList.append(topTenTitle);
             let topTenImg = document.createElement("img");
-            topTenImg = value[i].image_url;
-            topImg.src = topTenImg;
+            topTenImg.src = value[i].image_url
+            animeList.append(topTenImg);
         }
     });
+
     const mangaContainer = document.querySelector('.manga_container');
 // const dataInfo = document.getElementById()
 // const totalViews = document.getElementById()
 // const topImg = document.getElementById()
+
 
     const selections = {
         method: 'GET',
@@ -74,12 +74,15 @@ const mangaContainer = document.querySelector('.manga_container');
                 mangaContainer.appendChild(topTenViews)
                 mangaContainer.appendChild(topTenImg)
                 console.log(topTenTitle)
-                 // .catch(err => console.error(err));
+
+              
+                 .catch(err => console.error(err));
     
             }
             })
-        // .then(response => console.log(response))
+        .then(response => console.log(response))
         
+
 
 
 let mangaBtn = document.querySelector('#mangaBtn');
@@ -115,4 +118,3 @@ mangaBtn.addEventListener('click', function(event) {
 
     console.log(mangaInput)
  })
-//  Alex D.
