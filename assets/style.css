@@ -43,18 +43,37 @@ header {
     border: solid;
     border-color: darkorange;
 }
-.user_input {
+
+.search_card {
     border: solid;
     border-color: darkorange;
-    padding: 30px;
+    padding: 100px;
 }
 .search_results {
     border: solid;
     border-color: darkorange;
     padding: 100px;
 }
-.search_button {
 
+.search_tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 150%;
+    border: 3px solid rgb(27, 26, 31);
+    background-color: rgb(238, 116, 65);
+    cursor: pointer;
 }
 
 /* Search column & features */
