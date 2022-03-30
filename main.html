@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>AniMag</title>
 </head>
 <body>
@@ -13,30 +14,25 @@
         <!-- Placement for the date and time -->
         <div class="the_current_date_and_time"></div>
     </header>
+    <br>
     <main>
     <!-- grid-view, col-8 must equal to 66.66% -->
     <div class="col-8">
         <div class="anime_container">
-            <div class="anime_container">
-                <h2 class="card-title" id="anime-title">
-                </h2>
-                <!-- Placement holder for Anime/Manga's image/link -->
-                <div class="img_card"><img src="" id="anime-image"></div>
-                <!-- Placemnet holder for Anime/Manga's rank -->
-                <div class="rank" id="anime-rank"></div>
-            </div>
-        </div>
 
+            <div class="anime_container">
+                <ol id="anime-list">
+                </ol>
+            </div>
+
+        </div>
+        <br>
         <div class="manga_container">
-            <div class="card-title">
-                <h2>
+            <h2 class="card-title">
                 <!-- Placement for the Anime/Manga's title -->
-                </h2>
-            </div>
-            <div class="card">
-                <!-- Placement holder for Anime/Manga's image/link -->
-                <div class="img"></div>
-            </div>
+            </h2>
+            <!-- Placement holder for Anime/Manga's image/link -->
+            <div class="img_card"></div>
             <!-- Placemnet holder for Anime/Manga's rank -->
             <div class="rank"></div>
         </div>
@@ -49,12 +45,22 @@
         <!-- Anime/Manga search card -->
         <div class="search_card">
             <div class="prompt">Search for Anime/Manga</div>
+            <br>
             <div class="user_input"></div>
+            <br>
             <div class="search_results"></div>
         </div>
-        <button class="search_button"></button>
+        <br>
+        <button class="search_button" id="mangaBtn">Search</button>
     </div>
     </aside>
+    <br>
+    <footer>
+    <div class="col-12">
+        <a href="index.html" style="text-decoration: none;">|Return to Landing Page|</a>
+        <p>&copy; 2022 Group Project One</p>
+    </div>
+    </footer>
 </body>
 <script src="./script.js"></script>
 </html>
