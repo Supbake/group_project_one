@@ -31,6 +31,7 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
             topImg.src = topTenImg;
         }
     });
+    
 const dataInfo = document.getElementById()
 const totalViews = document.getElementById()
 const topImg = document.getElementById()
