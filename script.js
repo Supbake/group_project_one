@@ -31,18 +31,7 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
             topImg.src = topTenImg;
         }
     });
-    const mangaContainer = document.querySelector('.manga_container');
-// const dataInfo = document.getElementById()
-// const totalViews = document.getElementById()
-// const topImg = document.getElementById()
 
-    const selections = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Host': 'manga-scraper-for-mangakakalot-website.p.rapidapi.com',
-            'X-RapidAPI-Key': '09a4e7faf2msh523a4db1e7ece89p1a8bf2jsn108177f4fbaf'
-        }
-    }
 const mangaContainer = document.querySelector('.manga_container');
 // const dataInfo = document.getElementById()
 // const totalViews = document.getElementById()
