@@ -55,13 +55,9 @@ const mangaContainer = document.querySelector('.manga_container');
                 topTenViews.textContent = value[i].views_count;
                 let topTenImg = document.createElement("img")
                 topTenImg.src = value[i].thumbnail_url
-
-
-              
-                 .catch(err => console.error(err));
-    
-            }
-            });
+              }
+            
+});
 
 
 let mangaBtn = document.querySelector('#mangaBtn');
@@ -69,7 +65,7 @@ let mangaBtn = document.querySelector('#mangaBtn');
 mangaBtn.addEventListener('click', function(event) {
     event.preventDefault();
     let mangaInput = document.querySelector('#mangaSearch').value;
-    
+
 
 const mangaSearchOptions = {
         method: 'GET',
