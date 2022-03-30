@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@300;700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Teko';
 }
 body {
     background-color: rgb(252, 241, 221);
@@ -8,11 +11,26 @@ header {
     border: solid;
     border-width: 3px;
     border-color: darkorange;
-    background-color: rgb(247, 176, 46);
-    padding: 50px;
+    background-image: url(./images/Background_darker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.page_title {
-    font-size: 50px;
+footer {
+    background-image: url(./images/Background_darker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+}
+#footertext {
+    margin: none;
+    padding: none;
+    text-align: center;
+}
+#return {
+    cursor: pointer;
+    color: white;
 }
 
 /* Top Anime/Manga column & features */
@@ -52,10 +70,11 @@ ol {
     border: solid;
     border-color: darkorange;
 }
-.user_input {
+
+.search_card {
     border: solid;
     border-color: darkorange;
-    padding: 30px;
+    padding: 100px;
 }
 .search_results {
     border: solid;
@@ -63,6 +82,57 @@ ol {
     padding: 100px;
 }
 
+.search_tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 150%;
+    border: 3px solid rgb(27, 26, 31);
+    background-color: rgb(238, 116, 65);
+    cursor: pointer;
+}
+
+#animag {
+    margin-left: 5%;
+    padding: none;
+    letter-spacing: 10px;
+    text-shadow: 4px 0 0 #000000, -4px 0 0 #000000, 0 4px 0 #000000, 0 -4px 0 #000000, 4px 2px #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000;
+}
+
+#ani {
+    color: rgb(238, 116, 65);
+    font-family: 'Audiowide';
+    font-size: 50px;
+}
+
+#mag {
+    color: rgb(43, 114, 185);
+    font-family: 'Audiowide';
+    font-size: 50px;
+}
+
+#A {
+    color: rgb(238, 116, 65);
+    font-family: 'Audiowide';
+    font-size: 200%;
+}
+
+#M {
+    color: rgb(43, 114, 185);
+    font-family: 'Audiowide';
+    font-size: 200%;
+}
 
 /* Search column & features */
 /* Footer features */
