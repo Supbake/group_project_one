@@ -56,13 +56,11 @@ const topImg = document.getElementById()
                 let topTenImg = document.createElement("img")
                 topTenImg.src = "imggit"
 
-                console.log(topTenTitle)
 
               
                  .catch(err => console.error(err));
     
             }
-            })
-        .then(response => console.log(response))
+            });
         
 
