@@ -30,7 +30,7 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
 
 
 
-    const mangaContainer = document.querySelector('.manga_container');
+    const mangaContainer = document.querySelector('.manga-list');
 
 
     const selections = {
