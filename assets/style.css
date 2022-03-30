@@ -45,7 +45,16 @@ footer {
     border: solid;
     border-color: darkorange;
     padding: 200px;
+    overflow-x: scroll;
 }
+ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
 /* Manga cards container features */
 .manga_container {
     border: solid;
@@ -131,7 +140,7 @@ footer {
     border: solid;
     border-color: darkorange;
     padding: 50px;
-    margin-top: 920px;
+    margin-top: 1115px;
     text-align: center;
 }
 
