@@ -45,22 +45,27 @@ footer {
 .anime_container {
     border: solid;
     border-color: darkorange;
-    padding: 200px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    /* overscroll-behavior-inline: contain; */
+    /* scrollbar-color: darkorange; */
 }
+
+/* Features aplly for both ol's tags(attributes) */
 ol {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 490px;
+    gap: 15px;
+
 }
 
 /* Manga cards container features */
 .manga_container {
     border: solid;
     border-color: darkorange;
-    padding: 200px;
+    overflow-x: auto;
 }
 
 /* Search column & features */
