@@ -6,8 +6,6 @@ const options = {
 	}
 };
 
-
-
 const list = document.getElementById("anime-list");
 
 fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
@@ -28,10 +26,7 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
     }
 });
 
-
-
     const mangaContainer = document.querySelector('.manga-list');
-
 
     const selections = {
         method: 'GET',
@@ -40,7 +35,6 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
             'X-RapidAPI-Key': '09a4e7faf2msh523a4db1e7ece89p1a8bf2jsn108177f4fbaf'
         }
     }
-
 
     fetch('https://manga-scraper-for-mangakakalot-website.p.rapidapi.com/search?keyword=memori&page=1', selections)
         .then(response => response.json())
@@ -55,18 +49,20 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
                 topTenViews.append(topTenTitle);
                 let topTenImg = document.createElement("img");
                 topTenImg.src = value[i].thumbnail_url
-                topTenViews.append(topTenImg);
-            }
-            
-});
 
+                topTenViews.append(topTenImg);
+            }          
+});
 
 let mangaBtn = document.querySelector('#mangaBtn');
 
 mangaBtn.addEventListener('click', function(event) {
+   
     event.preventDefault();
-    let mangaInput = document.querySelector('#mangaSearch').value;
-
+    let testList = ["Dragon_Ball_z", "Naruto", "bleach","my_hero", "inuyasha", "fullmetal_alchemist", "death_note", "sailor_moon", "attack_on_titan", "one_piece"]
+    // let mangaInput = document.querySelector('#mangaSearch').value;
+    randomIndex = Math.floor(Math.random() * testList.length)
+    mangaInput = testList[randomIndex]
 
 const mangaSearchOptions = {
         method: 'GET',
@@ -82,7 +78,7 @@ const mangaSearchOptions = {
             let data = response.data;
             console.log(response)
             let mangaSearchContainer = document.querySelector('.mangaSearchContainer')
-            mangaSearchContainer.innerHTML = '';
+            mangaSearchContainer.innerHTML = ''; 
 
             for(let i = 0; i < data.length; i++) {
                 let mangaTitle = document.createElement('h1');
@@ -95,3 +91,5 @@ const mangaSearchOptions = {
 
     console.log(mangaInput)
  })
+
+//  mangaSearchOptions Math.random()
