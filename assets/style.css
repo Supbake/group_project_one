@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-size: 24px;
     font-family: 'Teko';
 }
 body {
@@ -23,6 +24,7 @@ footer {
     font-size: 150%;
     text-align: center;
 }
+
 #footertext {
     margin: none;
     padding: none;
@@ -44,13 +46,27 @@ footer {
 .anime_container {
     border: solid;
     border-color: darkorange;
-    padding: 200px;
+    overflow-x: auto;
+    /* overscroll-behavior-inline: contain; */
+    /* scrollbar-color: darkorange; */
 }
+
+/* Features aplly for both ol's tags(attributes) */
+ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 490px;
+    gap: 15px;
+
+}
+
 /* Manga cards container features */
 .manga_container {
     border: solid;
     border-color: darkorange;
-    padding: 200px;
+    overflow-x: auto;
 }
 
 /* Search column & features */
@@ -77,6 +93,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 150%;
+    font-weight: 300;
 }
 
 .search_button {
@@ -89,10 +107,42 @@ footer {
     height: 50px;
     font-weight: 700;
     font-size: 150%;
+    color: rgb(250, 235, 215);
     border: 3px solid rgb(27, 26, 31);
     background-color: rgb(238, 116, 65);
     cursor: pointer;
 }
+
+@-webkit-keyframes pulse-grow-on-hover {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes pulse-grow-on-hover {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .search_button {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .search_button:hover, .search_button:focus, .search_button:active {
+    -webkit-animation-name: pulse-grow-on-hover;
+    animation-name: pulse-grow-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
 
 #animag {
     margin-left: 5%;
@@ -131,7 +181,7 @@ footer {
     border: solid;
     border-color: darkorange;
     padding: 50px;
-    margin-top: 920px;
+    margin-top: 1115px;
     text-align: center;
 }
 
