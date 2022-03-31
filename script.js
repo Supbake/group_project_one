@@ -6,8 +6,6 @@ const options = {
 	}
 };
 
-
-
 const list = document.getElementById("anime-list");
 
 fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
@@ -28,10 +26,7 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
     }
 });
 
-
     const mangaContainer = document.querySelector('.manga-list');
-
-
 
     const selections = {
         method: 'GET',
@@ -41,24 +36,23 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
         }
     }
 
-
     fetch('https://manga-scraper-for-mangakakalot-website.p.rapidapi.com/search?keyword=memori&page=1', selections)
         .then(response => response.json())
         .then(info => {
             console.log(info)
             let value = info.data
             for(let i=0; i<10; i++){
-                let topTenTitle = document.createElement("li")
-                topTenTitle.textContent=value[i].title;
-                // topTenTitle.append(dataInfo)
-                let topTenViews = document.createElement("p")
-                topTenViews.textContent = value[i].views_count;
-                let topTenImg = document.createElement("img")
+                let topTenViews = document.createElement("li");
+                mangaContainer.appendChild(topTenViews);
+                let topTenTitle = document.createElement("p")
+                topTenTitle.textContent = value[i].title;
+                topTenViews.append(topTenTitle);
+                let topTenImg = document.createElement("img");
                 topTenImg.src = value[i].thumbnail_url
-              }
-            
-});
 
+                topTenViews.append(topTenImg);
+            }          
+});
 
 let mangaBtn = document.querySelector('#mangaBtn');
 
@@ -69,7 +63,6 @@ mangaBtn.addEventListener('click', function(event) {
     // let mangaInput = document.querySelector('#mangaSearch').value;
     randomIndex = Math.floor(Math.random() * testList.length)
     mangaInput = testList[randomIndex]
-    
 
 const mangaSearchOptions = {
         method: 'GET',
