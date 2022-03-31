@@ -77,12 +77,16 @@ ol {
 .search_card {
     border: solid;
     border-color: darkorange;
-    padding: 100px;
+    padding: 50px;
+    height: 1152px;
+
 }
 .search_results {
     border: solid;
     border-color: darkorange;
-    height: 400px;
+    height: 780px;
+    padding: 50px;
+    width: auto;
     overflow-y: auto;
     text-align: center;
 }
@@ -140,7 +144,7 @@ ol {
     animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-  }
+}
 
 #animag {
     margin-left: 5%;
@@ -196,3 +200,4 @@ ol {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
