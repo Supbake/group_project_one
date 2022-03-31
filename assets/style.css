@@ -39,8 +39,7 @@ footer {
 [class="col-8"] {
     float: left;
     padding: 15px;
-    border: solid;
-    border-color: darkorange;
+   
 }
 /* Anime cards container features */
 .anime_container {
@@ -59,6 +58,7 @@ ol {
     align-items: center;
     height: 490px;
     gap: 15px;
+    justify-content: flex-start;
 
 }
 
@@ -74,8 +74,6 @@ ol {
 [class="col-4"] {
     float: left;
     padding: 15px;
-    border: solid;
-    border-color: darkorange;
 }
 
 .search_card {
@@ -181,7 +179,7 @@ ol {
     border: solid;
     border-color: darkorange;
     padding: 50px;
-    margin-top: 1115px;
+    margin-top: 1185px;
     text-align: center;
 }
 
