@@ -67,8 +67,9 @@ mangaBtn.addEventListener('click', function(event) {
     event.preventDefault();
     let testList = ["Dragon_Ball_z", "Naruto", "bleach","my_hero", "inuyasha", "fullmetal_alchemist", "death_note", "sailor_moon", "attack_on_titan", "one_piece"]
     // let mangaInput = document.querySelector('#mangaSearch').value;
-randomIndex = Math.floor(Math.random() * testList.length)
-mangaInput = testList[randomIndex]
+    randomIndex = Math.floor(Math.random() * testList.length)
+    mangaInput = testList[randomIndex]
+    
 
 const mangaSearchOptions = {
         method: 'GET',
