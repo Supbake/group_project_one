@@ -10,8 +10,7 @@
 <body>
     <header class="page_header">
         <!-- The title of the page "AniMag" (with opportunity for a more creative features) -->
-        <div class="page_title"><h1 id="animag"><span id="ani"><span id="A">A</span>ni<span id="mag"><span id="M">M</span>ag</span></h1>
-        </div>
+        <div class="page_title">Ani<span class="br">Mag</span></div>
         <!-- Placement for the date and time -->
         <div class="the_current_date_and_time"></div>
     </header>
@@ -20,21 +19,17 @@
     <!-- grid-view, col-8 must equal to 66.66% -->
     <div class="col-8">
         <div class="anime_container">
-
-            <div class="anime_container">
-                <ol id="anime-list">
-                </ol>
-            </div>
-
+            <ol id="anime-list">
+            </ol>
         </div>
         <br>
         <div class="manga_container">
-            <h2 class="card_title">
+            <h2 class="card-title">
                 <!-- Placement for the Anime/Manga's title -->
             </h2>
             <!-- Placement holder for Anime/Manga's image/link -->
             <div class="img_card"></div>
-            <!-- Placement holder for Anime/Manga's rank -->
+            <!-- Placemnet holder for Anime/Manga's rank -->
             <div class="rank"></div>
         </div>
     </div>
@@ -45,19 +40,21 @@
     <div class="col-4">
         <!-- Anime/Manga search card -->
         <div class="search_card">
-            <div class="search_tag">Looking for something new to read?</div>
+            <div class="prompt">Search for Anime/Manga</div>
             <br>
-            <button class="search_button" id="mangaBtn">Discover!</button> 
-            <br>
+            <div class="user_input"></div>
             <br>
             <div class="search_results"></div>
         </div>
+        <br>
+        <button class="search_button" id="mangaBtn">Search</button>
     </div>
     </aside>
     <br>
     <footer>
-    <div class="col-12" id="centerFooter">
-        <div id="footertext"><a href="index.html" style="text-decoration: none;" id="return">|Return to Landing Page|</a><br>&copy; 2022 Group Project One</div>
+    <div class="col-12">
+        <a href="index.html" style="text-decoration: none;">|Return to Landing Page|</a>
+        <p>&copy; 2022 Group Project One</p>
     </div>
     </footer>
 </body>
