@@ -29,8 +29,8 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
 });
 
 
-
     const mangaContainer = document.querySelector('.manga-list');
+
 
 
     const selections = {
@@ -55,13 +55,7 @@ fetch('https://jikan1.p.rapidapi.com/top/anime/1/upcoming', options)
                 topTenViews.textContent = value[i].views_count;
                 let topTenImg = document.createElement("img")
                 topTenImg.src = value[i].thumbnail_url
-
-                mangaContainer.appendChild(topTenTitle)
-                mangaContainer.appendChild(topTenViews)
-                mangaContainer.appendChild(topTenImg)
-                
-              
-            }
+              }
             
 });
 
