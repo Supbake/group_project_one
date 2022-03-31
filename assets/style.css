@@ -46,8 +46,6 @@ footer {
     border: solid;
     border-color: darkorange;
     overflow-x: auto;
-    /* overscroll-behavior-inline: contain; */
-    /* scrollbar-color: darkorange; */
 }
 
 /* Features aplly for both ol's tags(attributes) */
@@ -84,7 +82,9 @@ ol {
 .search_results {
     border: solid;
     border-color: darkorange;
-    padding: 100px;
+    height: 400px;
+    overflow-y: auto;
+    text-align: center;
 }
 
 .search_tag {
