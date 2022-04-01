@@ -36,7 +36,7 @@ footer {
 }
 
 /* Top Anime/Manga column & features */
-[class="col-8"] {
+.col-8 {
     float: left;
     padding: 15px;
    
@@ -69,7 +69,7 @@ ol {
 
 /* Search column & features */
 /* Search card features */
-[class="col-4"] {
+.col-4 {
     float: left;
     padding: 15px;
 }
@@ -177,13 +177,34 @@ ol {
     font-size: 200%;
 }
 
+@media screen and (max-width: 1170px) {
+    aside, main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    /* .anime_container, .manga_container {
+    }
+    .col-8 {
+    } */
+    .col-4 {
+        height: 0px;
+        
+    }
+    .col-12 {
+        margin-top: none;
+    }
+}
+
+
 /* Search column & features */
 /* Footer features */
-[class="col-12"] {
+.col-12 {
     border: solid;
     border-color: darkorange;
     padding: 50px;
-    margin-top: 1185px;
+    margin-top: 1210px;
     text-align: center;
 }
 
